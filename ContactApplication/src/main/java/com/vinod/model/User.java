@@ -7,51 +7,73 @@ import javax.persistence.Id;
 public class User 
 {
 	@Id
-	private int id;
-	private String name;
-	private String mail;
-	private long mobile;
+	private int uId;
+	private String uName;
+	private String uMail;	
+	private String loginId;
+	private String password;
+	private long uMobile;
 	
 	public User() {
 		super();
 	}
-	
-	public User(int id, String name, String mail, long mobile) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.mail = mail;
-		this.mobile = mobile;
+
+	public int getuId() {
+		return uId;
 	}
 
-	public int getId() {
-		return id;
+	public void setuId(int uId) {
+		this.uId = uId;
 	}
-	public void setId(int id) {
-		this.id = id;
+
+	public String getuName() {
+		return uName;
 	}
-	public String getName() {
-		return name;
+
+	public void setuName(String uName) {
+		this.uName = uName;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public String getuMail() {
+		return uMail;
 	}
-	public String getMail() {
-		return mail;
+
+	public void setuMail(String uMail) {
+		this.uMail = uMail;
 	}
-	public void setMail(String mail) {
-		this.mail = mail;
+
+	public String getLoginId() {
+		return loginId;
 	}
-	public long getMobile() {
-		return mobile;
+
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
 	}
-	public void setMobile(long mobile) {
-		this.mobile = mobile;
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public long getuMobile() {
+		return uMobile;
+	}
+
+	public void setuMobile(long uMobile) {
+		this.uMobile = uMobile;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", mail=" + mail + ", mobile=" + mobile + "]";
+		return "User [uId=" + uId + ", uName=" + uName + ", uMobile=" + uMobile + "]";
 	}
+
+
+	
+
+
 	
 }

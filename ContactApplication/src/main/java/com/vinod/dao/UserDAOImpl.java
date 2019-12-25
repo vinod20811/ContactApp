@@ -16,7 +16,9 @@ public class UserDAOImpl implements  UserDAO{
 
 	public void save(User user) {
 		Session session=sf.openSession();
+		session.getTransaction().begin();
 		session.save(user);		
+		session.getTransaction().commit();
 	}
 
 	public void delete(User user) {
