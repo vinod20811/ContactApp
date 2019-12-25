@@ -41,14 +41,13 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>4.3.10.Final</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
-		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
 		<dependency>
-			<groupId>javax.servlet.jsp.jstl</groupId>
-			<artifactId>jstl-api</artifactId>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+
 
 
 
